@@ -6,6 +6,8 @@ import {Component} from "@angular/core";
 })
 export class PropertiesListComponent {
   pageTitle: string = "Properties Listing";
+  imageWidth: number = 100;
+  imageMargin: number = 2;
   properties: any [] = [
     {
       "propertyId": 1,
@@ -13,7 +15,7 @@ export class PropertiesListComponent {
       "noBedrooms": "1",
       "availableDate": "January 19, 2018",
       "description": "Second floor fully modernized 2 bedroom flat set in the highly desirable area of Polwarth, with a host of great local ameni... ",
-      "rentalprice": 940,
+      "rentalPrice": 940,
       "starRating": 3.2,
       "imageUrl": "https://openclipart.org/image/300px/svg_to_png/217456/SmallHouse-fixed.png&disposition=attachment"
     },
@@ -23,7 +25,7 @@ export class PropertiesListComponent {
       "noBedrooms": "3",
       "availableDate": "March 12, 2018",
       "description": "Second floor fully modernized 3 bedroom flat set in the highly desirable area of Merchiston, with a host of great local ameni... ",
-      "rentalprice": 1250,
+      "rentalPrice": 1250,
       "starRating": 3.2,
       "imageUrl": "https://openclipart.org/image/300px/svg_to_png/217456/SmallHouse-fixed.png&disposition=attachment"
     },

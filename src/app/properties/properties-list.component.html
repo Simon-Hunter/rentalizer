@@ -27,17 +27,23 @@
           <th>Property</th>
           <th>No.Bedrooms</th>
           <th>Available</th>
-          <th>Rennal Price</th>
+          <th>Rental Price</th>
           <th>5 Star Rating</th>
         </tr>
         </thead>
         <tbody>
         <tr *ngFor="let property of properties">
-          <td></td>
+          <td>
+            <img [src]='property.imageUrl'
+                 [title]='property.productName'
+                 [style.width.px]='imageWidth'
+                 [style.margin.px]='imageMargin'
+            >
+          </td>
           <td>{{property.propertyDesc}}</td>
           <td>{{property.noBedrooms}}</td>
           <td>{{property.availableDate}}</td>
-          <td>{{property.rentalprice}}</td>
+          <td>{{property.rentalPrice}}</td>
           <td>{{property.starRating}}</td>
         </tr>
         </tbody>
